@@ -1,0 +1,19 @@
+Install from:
+http://ant.apache.org/bindownload.cgi
+
+Installation site step by step:
+http://www.mkyong.com/ant/how-to-install-apache-ant-on-windows/
+
+Watch Installation Video:
+https://www.youtube.com/watch?v=aGTa2g17LxY
+
+issue:
+tool jar not found
+solution:
+add JAVA_HOME=*jdk path*
+and set jdk bin path to PATH variable
+http://stackoverflow.com/questions/6676107/unable-to-locate-tools-jar
+
+verification:
+go to command prompt and type
+ant -version

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Languages</title>
+</head>
+<body>
+<h3>Multiple Page Form-Page 3</h3>  
+  <form action="multform4" method="POST">
+    <% language_list.forEach(function(lang){ %>
+      <% if(selectedLanguage && selectedLanguage.indexOf(lang) > -1) { %>
+      <input type = "checkbox" name = "languages" value="<%= lang %>" checked><%= lang %>
+      <% } else { %>
+      <input type = "checkbox" name = "languages" value="<%= lang %>"><%= lang %>
+      <% } %>
+    <% }); %>
+    <br>
+  <input type="submit" value="Next">
+  </form>
+
+  <form action="multform2" method="POST">
+  <input type="submit" value="Previous">
+  </form>
+
+</body>

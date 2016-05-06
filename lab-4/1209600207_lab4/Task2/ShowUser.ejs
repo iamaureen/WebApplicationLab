@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body bgcolor="<%=color %>">
+  <h4>List of Added Users</h4>
+  
+  <div>
+    <table>
+    <% for(var i=0; i < userList.length; i++) { %>
+       <tr>
+         <td><%= i+1 %>.</td>
+         <td>FirstName: <%= userList[i].fname %></br></td>
+         <td>LastName: <%= userList[i].lname %></td></br>
+         <td>Prefered Language: <%= userList[i].languages%></td></br>
+         <td>Available Days: <%= userList[i].days %></td></br>
+         <td>Hair Color: <%= userList[i].hairColor %></td></br>
+       </tr
+    <% } %>
+    </table>
+  </div>
+</body>
+</html>

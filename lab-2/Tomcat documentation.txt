@@ -1,0 +1,25 @@
+1. install tomcat
+http://tomcat.apache.org/
+go to bin folder, there is a batch file for both start and stop the server
+start the server
+
+**issue: java_home/jre_home not set
+add a system variable in the environment variable directing to jdk/jre
+https://confluence.atlassian.com/doc/setting-the-java_home-variable-in-windows-8895.html
+
+then try: localhost:8080 in the browser
+**issue: check the port in server.xml in tomcat folder if its not 8080
+
+**issue:connect to manager once the server is setup-if fails
+go to the tomcat-user.xml in conf folder and paste the following:
+<role rolename="manager-gui"/>
+  <role rolename="manager-script"/>
+  <role rolename="manager-jmx"/>
+  <role rolename="manager-status"/>
+  <user username="user" password="user" roles="manager-script,manager-gui,manager-jmx,manager-status"/>
+
+2. have to create a war file, follow this tutorial
+https://www.youtube.com/watch?v=Av6zh817QEc
+-install java ee eclipse
+a. create dynamic web project
+b. enter project name, set target runtime to apache tomcat version

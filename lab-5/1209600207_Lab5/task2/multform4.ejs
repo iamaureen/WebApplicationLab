@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Days Of Week</title>
+</head>
+<body>
+
+  <form action="multform5" method="POST">
+    <% days_list.forEach(function(day){ %>
+      <% if(selectedDays && selectedDays.indexOf(day) > -1) { %>
+      <input type = "checkbox" name = "days" value="<%= day %>" checked><%= day %>
+      <% } else { %>
+      <input type = "checkbox" name = "days" value="<%= day %>"><%= day %>
+      <% } %>
+    <% }); %>
+    <br>
+  <input type="submit" value="Next">
+  </form>
+
+  <form action="multform3" method="POST">
+  <input type="submit" value="Previous">
+  </form>
+
+</body>

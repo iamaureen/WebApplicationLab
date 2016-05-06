@@ -1,0 +1,11 @@
+1. localhost:8081/
+2. localhost:8081/coders   -->output: no user
+3. localhost:8081/  ---> enter one user
+	- localhost:8081/coders ---> display one user
+	- localhost:8081/coders? firstname=  x   --> such that they match
+	- localhost:8081/coders? firstname=   x  --> such that they doesnt match
+4. localhost:8081/   ---> enter multiple users
+	- localhost:8081/coders ---> display all user
+	- localhost:8081/coders? firstname=  x   --> such that they match
+	- localhost:8081/coders? firstname=   x  --> such that they doesnt match
+	

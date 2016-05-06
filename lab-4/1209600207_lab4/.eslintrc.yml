@@ -1,0 +1,12 @@
+extends: eslint:recommended
+
+env:
+  node: true
+
+rules:
+  no-console: off
+  keyword-spacing: error
+  indent: error
+  block-spacing: error
+  space-infix-ops: error
+  semi: error

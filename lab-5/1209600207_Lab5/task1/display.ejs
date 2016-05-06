@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Record Page</title>
+</head>
+<body>
+<div>
+  <table>
+  <% for(var i=0; i < records.length; i++) { %>
+     <tr>
+       <td><%= i+1 %>.</td>
+       <td>First Name: <%= records[i].fname %></td>
+       <td>Last Name: <%= records[i].lname %></td>
+       <td>Languages: <%= records[i].languages %></td>
+       <td>Available days:<%= records[i].days %></td>
+       <td>Hair Color: <%= records[i].hairColor %></td>
+     </tr>
+  <% } %>
+  </table>
+</div>
+</body>
+</html>

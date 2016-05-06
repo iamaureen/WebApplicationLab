@@ -1,0 +1,21 @@
+Task 2 point 1: done
+---------------------
+http://localhost:8080/ser422a
+
+
+Task 2 point 2: done
+---------------
+http://localhost:8080/ser422a/
+
+to view  the xml:
+http://localhost:8080/ser422a/lab2.xml
+
+Task 2 point 3: done
+----------------
+generating response errors
+1. generates error response for requesting get method in place of post method
+http://localhost:8080/ser422a/first
+going to this link will provide an error response
+
+2. generates error response if values are not provided for the multiple form
+

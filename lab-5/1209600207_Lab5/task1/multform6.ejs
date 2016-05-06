@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>All Information</title>
+</head>
+<body>
+ <h3>You entered: </h3> 
+
+  First Name: <%= fname %><br>
+  Last Name : <%= lname %><br>
+  Languages : <%= selectedLang %><br>
+  Days of Week : <%= selectedDays %><br>
+  Hair Color : <%= selectedHairColors %><br>
+
+  <form action="post_coder" method="POST">
+  <input type="submit" value="Submit">
+  </form>
+
+  <form action="cancel" method="POST">
+  <input type="submit" value="Cancel">
+  </form>
+
+  <form action="multform5" method="POST">
+  <input type="submit" value="Previous">
+  </form>
+
+</body>
